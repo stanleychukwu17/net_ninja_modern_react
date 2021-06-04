@@ -5,7 +5,7 @@ const Navbar = () => {
             <div className="linkPar">
                 <a href="">Home</a>
                 <a href="/make.php">make request</a>
-                <a href="About us">About Us</a>
+                <a href="/#about_us">About Us</a>
                 <a href="contact_us.php">Contact us</a>
             </div>
         </div>
