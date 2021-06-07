@@ -20,6 +20,7 @@ function App() {
       <Navbar />
       <Home />
       <Bloglist blogs={blogs} title="All the blog"/>
+      <Bloglist blogs={blogs} title="Marios blog"/>
     </div>
   );
 }

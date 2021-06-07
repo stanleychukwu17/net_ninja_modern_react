@@ -27,7 +27,8 @@ h1,h2,h3,h4 { margin: 0; padding: 0; }
 
 /*--start-- the styling for the blog */
 .mkO_Bg_cvr {
-  margin: 10px 0; font-size: 17px;
+  display: block; position: relative; overflow: hidden;
+  margin: 20px 0 40px; font-size: 17px;
 }
 .mkEchBg {
   padding: 10px 1%; margin: 10px 1.5%; float: left; width: 45%;
