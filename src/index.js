@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <Home />
       <Bloglist blogs={blogs} title="All the blog"/>
-      <Bloglist blogs={blogs} title="Marios blog"/>
+      <Bloglist blogs={blogs.filter(ech => ech.author == 'mario')} title="Marios blog"/>
     </div>
   );
 }
