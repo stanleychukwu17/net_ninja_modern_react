@@ -3,3 +3,5 @@ const Bloglist = () => {
         <div>This is the blog side</div>
     );
 }
+
+export default Bloglist;
