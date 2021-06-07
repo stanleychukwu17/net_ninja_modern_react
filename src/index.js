@@ -15,12 +15,17 @@ function App() {
     {'title':'Blog from 4', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'mario', 'id':4},
   ]);
 
+  let deleteBlog = blog_id => {
+    console.log(blog_id);
+    console.log('i love this');
+  }
+
   return (
     <div className="App_cover">
       <Navbar />
       <Home />
-      <Bloglist blogs={blogs} title="All the blog"/>
-      <Bloglist blogs={blogs.filter(ech => ech.author == 'mario')} title="Marios blog"/>
+      <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>
+      <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author == 'mario')} title="Marios blog"/>
     </div>
   );
 }
