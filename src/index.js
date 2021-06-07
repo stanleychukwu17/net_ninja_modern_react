@@ -19,7 +19,7 @@ function App() {
     <div className="App_cover">
       <Navbar />
       <Home />
-      <Bloglist />
+      <Bloglist blogs={blogs} />
     </div>
   );
 }
