@@ -3,10 +3,10 @@ const Bloglist = (props) => {
 
     return (
         <div className="mkO_Bg_cvr">
-            <div>All blogs</div>
+            <div><h2>{props.title}</h2></div>
             <div>
                 {blogs.map((ech) => (
-                    <div className="" key="{ech.id}">{ech.title}</div>
+                    <div className="mkEchBg" key="{ech.id}">{ech.title}</div>
                 ))}
             </div>
         </div>

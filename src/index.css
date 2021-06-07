@@ -23,3 +23,13 @@ body {
 .linkPar > a {
   margin: 0 10px; color: #0056b6; text-decoration: none;
 }
+
+/*--start-- the styling for the blog */
+.mkO_Bg_cvr {
+  margin: 10px 0; font-size: 17px;
+}
+.mkEchBg {
+  padding: 10px 1%; margin: 10px 1.5%; float: left; width: 45%;
+  background-color: #f1f2f6;
+}
+/*--end-- */

@@ -10,7 +10,7 @@ import Bloglist from './bloglist.js';
 function App() {
   let [blogs, setBlogs] = useState([
     {'title':'Blog from 1', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'julio', 'id':1},
-    {'title':'Blog from 2', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'mario', 'id':2},
+    {'title':'Blog from 2', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'ben', 'id':2},
     {'title':'Blog from 3', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'mario', 'id':3},
     {'title':'Blog from 4', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'mario', 'id':4},
   ]);
@@ -19,7 +19,7 @@ function App() {
     <div className="App_cover">
       <Navbar />
       <Home />
-      <Bloglist blogs={blogs} />
+      <Bloglist blogs={blogs} title="All the blog"/>
     </div>
   );
 }
