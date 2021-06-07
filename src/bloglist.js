@@ -9,6 +9,7 @@ const Bloglist = (props) => {
                     <div className="mkEchBg" key="{ech.id}">
                         <div><h3>{ech.title}</h3></div>
                         <div>By: {ech.author}</div>
+                        <div><button onClick={props.deleteBlog}>delete blog</button></div>
                     </div>
                 ))}
             </div>
