@@ -6,10 +6,10 @@ const Bloglist = (props) => {
             <div><h2>{props.title}</h2></div>
             <div>
                 {blogs.map((ech) => (
-                    <div className="mkEchBg" key="{ech.id}">
+                    <div className="mkEchBg" data-id={ech.id} key="{ech.id}">
                         <div><h3>{ech.title}</h3></div>
                         <div>By: {ech.author}</div>
-                        <div><button onClick={props.delF}>delete blog</button></div>
+                        <div><button onClick={props.delF.bind(this, ech.id)}>delete blog</button></div>
                     </div>
                 ))}
             </div>

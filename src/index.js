@@ -16,8 +16,9 @@ function App() {
   ]);
 
   let deleteBlog = blog_id => {
-    console.log(blog_id);
-    console.log('i love this');
+    let boju = [];
+    boju = blogs.filter(v => v.id != blog_id);
+    setBlogs(boju);
   }
 
   return (
@@ -25,7 +26,7 @@ function App() {
       <Navbar />
       <Home />
       <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>
-      <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author == 'mario')} title="Marios blog"/>
+      <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>
     </div>
   );
 }
