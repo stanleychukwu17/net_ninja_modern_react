@@ -15,8 +15,6 @@ function App() {
     {'title':'Blog from 4', 'preview':'Highlights', 'body':'Lorem ispanum', 'author':'mario', 'id':4},
   ]);
 
-  let [name, setName] = useState('james');
-
   let deleteBlog = blog_id => {
     let boju = [];
     boju = blogs.filter(v => v.id !== blog_id);
@@ -26,13 +24,11 @@ function App() {
   useEffect(() => {
     console.log('we shall see all the time');
     return () => 'time';
-  }, ['name']);
+  }, []);
 
   return (
     <div className="App_cover">
       <Navbar />
-      {name}
-      <button onClick={() => setName(name === 'james'? 'stanley' : 'james')}>change name</button>
       <Home />
       <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>
       <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>
