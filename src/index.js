@@ -5,7 +5,7 @@ import './index.css';
 import Navbar from './navbar.js';
 import Home from './home.js';
 import Bloglist from './bloglist.js';
-import get_content from './get_content.js';
+import Get_it from './get_content.js';
 
 function App() {
   let [blogs, setBlogs] = useState(null);
@@ -17,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-    let dean = get_content('http://localhost:8000/blogs');
+    let dean = Get_it('http://localhost:8000/blogs');
     console.log(dean);
     return () => 'time';
   }, []);
