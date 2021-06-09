@@ -5,7 +5,7 @@ import './index.css';
 import Navbar from './navbar.js';
 import Home from './home.js';
 import Bloglist from './bloglist.js';
-import Get_it from './get_content.js';
+import Getman from './get_content.js';
 
 function App() {
   let [blogs, setBlogs] = useState(null);
@@ -16,11 +16,8 @@ function App() {
     setBlogs(boju);
   }
 
-  useEffect(() => {
-    let dean = Get_it('http://localhost:8000/blogs');
-    console.log(dean);
-    return () => 'time';
-  }, []);
+  let dean = Getman('http://localhost:8000/blogs');
+  console.log(dean);
 
   return (
     <div className="App_cover">

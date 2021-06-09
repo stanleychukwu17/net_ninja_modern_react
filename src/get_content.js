@@ -1,11 +1,17 @@
 import {useState, useEffect} from 'react';
 
-const Get_it = (url) => {
+const Getman = (url) => {
     let [data, setData] = useState(null);
     let [pending, setPending] = useState(true);
     let [error, setError] = useState(false);
 
-    return {data, pending, error};
+    // return {data, pending, error};
+    useEffect(() => {
+      return () => 'time';
+    }, []);
+
+
+    return 
 }
  
-export default Get_it;
+export default Getman;
