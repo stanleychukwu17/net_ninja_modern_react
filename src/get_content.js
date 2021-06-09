@@ -11,7 +11,7 @@ const Getman = (url) => {
     }, []);
 
 
-    return 
+    return {data, pending, error}
 }
  
 export default Getman;
