@@ -1,5 +1,5 @@
 const useFetch = (url) => {
-    return (  );
+    return '';
 }
  
 export default useFetch;
