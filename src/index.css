@@ -34,7 +34,8 @@ h1,h2,h3,h4 { margin: 0; padding: 0; }
   padding: 10px 1%; margin: 10px 1.5%; float: left; width: 45%;
   background-color: #f1f2f6;
 }
-.mkEBtn {
-  margin: 10px 0 0;
+.mkEBtn { margin: 10px 0 0; }
+.mkEBtn button {
+  padding: 6px 10px; color: #000; font: size 13px; font-weight: bold;
 }
 /*--end-- */
