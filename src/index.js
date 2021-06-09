@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
 
@@ -17,9 +17,14 @@ function App() {
 
   let deleteBlog = blog_id => {
     let boju = [];
-    boju = blogs.filter(v => v.id != blog_id);
+    boju = blogs.filter(v => v.id !== blog_id);
     setBlogs(boju);
   }
+
+  useEffect(() => {
+    console.log('we shall see all the time');
+    return () => 'time';
+  });
 
   return (
     <div className="App_cover">
