@@ -1,7 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
-
 import './index.css';
 import Navbar from './navbar.js';
 import Home from './home.js';
