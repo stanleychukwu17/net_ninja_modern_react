@@ -1,0 +1,8 @@
+{
+    "blogs":[
+        {"title":"Blog from 1", "preview":"Highlights", "body":"Lorem ispanum", "author":"julio", "id":1},
+        {"title":"Blog from 2", "preview":"Highlights", "body":"Lorem ispanum", "author":"ben", "id":2},
+        {"title":"Blog from 3", "preview":"Highlights", "body":"Lorem ispanum", "author":"mario", "id":3},
+        {"title":"Blog from 4", "preview":"Highlights", "body":"Lorem ispanum", "author":"mario", "id":4}
+    ]
+}
