@@ -8,20 +8,14 @@ import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
 function App() {
-  let [blogs, setBlogs] = useState(false);
-  let [error, setError] = useState(null);
-  let [pending, setPending] = useState(true);
 
   let deleteBlog = blog_id => {
     let boju = [];
     boju = blogs.filter(v => v.id !== blog_id);
-    setBlogs(boju);
+    // setBlogs(boju);
   }
 
-  if (typeof blogs !== 'object') {
-    let {data, pnd, err} = Getman('http://localhost:8000/blogs');
-    setBlogs(data);
-}
+  let {data:blogs, pending, error} = Getman('http://localhost:8000/blogs');
 
   return (
     <div className="App_cover">
