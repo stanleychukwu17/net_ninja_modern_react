@@ -17,7 +17,7 @@ function App() {
     <Router>
       <div className="App_cover">
         <Navbar />
-        <div class="all_contents">
+        <div className="all_contents">
 
         </div>
         {error && <div className="errMan">{error}</div>}
