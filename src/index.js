@@ -9,6 +9,8 @@ import Getman from './get_content.js';
 
 function App() {
   let [blogs, setBlogs] = useState(null);
+  let [error, setError] = useState(null);
+  let [pending, setPending] = useState(null);
 
   let deleteBlog = blog_id => {
     let boju = [];
