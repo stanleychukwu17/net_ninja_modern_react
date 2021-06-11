@@ -7,8 +7,8 @@ import Navbar from './navbar.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
-import Create from './Create.js';
-import About from './About_us';
+import{Create_new_blog as Create} from './Create.js';
+import {About_us_page as About} from './About_us';
 
 function App() {
 
