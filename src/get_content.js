@@ -19,7 +19,6 @@ const Getman = (url) => {
       // return () => 'time';
     }, ['url']);
 
-    console.log('my obj', obj);
     return obj;
 }
  
