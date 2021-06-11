@@ -4,4 +4,4 @@ const Create_new_blog = () => {
     );
 }
  
-export default {Create_new_blog};
+export default Create_new_blog;

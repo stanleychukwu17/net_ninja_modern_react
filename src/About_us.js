@@ -4,4 +4,4 @@ const About_us_page = () => {
     );
 }
  
-export default {About_us_page};
+export default About_us_page;

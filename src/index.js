@@ -7,8 +7,8 @@ import Navbar from './navbar.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
-import{Create_new_blog as Create} from './Create.js';
-import {About_us_page as About} from './About_us';
+import Create_new_blog from './Create.js';
+import About_us_page from './About_us';
 
 function App() {
 
@@ -29,10 +29,10 @@ function App() {
               {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
             </Route>
             <Route path="/about_us">
- 
+              <About />
             </Route>
-            <Route path="/about_us">
- 
+            <Route path="/new_blog">
+              <Create />
             </Route>
           </Switch>
         </div>
