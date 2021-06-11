@@ -17,17 +17,8 @@ function App() {
   }
 
   let {data, pending, error} = Getman('http://localhost:8000/blogs');
-  setBlogs(data);
-
-  if (blogs) {
-    console.log('we made it');
-  } else {
-    console.log('e no dey');
-  }
-
-  /* useEffect(() => {
-    console.log('we go dey hail your name!');
-  }); */
+  // setBlogs(data);
+  console.log(data);
 
   return (
     <div className="App_cover">
