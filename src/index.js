@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 import Navbar from './navbar.js';
-import Home from './home.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
