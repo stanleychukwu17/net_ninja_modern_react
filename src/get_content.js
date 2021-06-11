@@ -7,6 +7,7 @@ const Getman = (url) => {
 
     // return {data, pending, error};
     useEffect(() => {
+      fetch(url).then(() =>).then();
       return () => 'time';
     }, []);
 
