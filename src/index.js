@@ -29,10 +29,10 @@ function App() {
               {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
             </Route>
             <Route path="/about_us">
-              <About />
+              <About_us_page />
             </Route>
-            <Route path="/new_blog">
-              <Create />
+            <Route exact path="/new_blog">
+              <Create_new_blog />
             </Route>
           </Switch>
         </div>

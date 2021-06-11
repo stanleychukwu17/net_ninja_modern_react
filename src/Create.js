@@ -1,6 +1,6 @@
 const Create_new_blog = () => {
     return (
-        <div><h2>For creating new blog</h2></div>
+        <div><h2>For creating blog</h2></div>
     );
 }
  
