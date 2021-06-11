@@ -1,7 +1,7 @@
-const Create_new_blog = () => {
+const About_us_page = () => {
     return (
-        <div><h2>For creating new blog</h2></div>
+        <div><h1>About my blog dog</h1></div>
     );
 }
  
-export default Create_new_blog;
+export default About_us_page;

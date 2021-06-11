@@ -7,6 +7,9 @@ import Navbar from './navbar.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
+import Create from './Create.js';
+import About from './About_us';
+
 function App() {
 
   let deleteBlog = blog_id => {}
