@@ -37,5 +37,5 @@ h1,h2,h3,h4 { margin: 0; padding: 0; }
 .mkEBtn { margin: 10px 0 0; }
 .mkEBtn button { padding: 6px 10px; color: #000; font: size 13px; font-weight: bold; }
 
-
+.Loading { text-align: center; font-size: 40px; margin: 30px 0 0; color: #0056b6; }
 /*--end-- */
