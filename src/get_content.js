@@ -11,9 +11,10 @@ const Getman = (url) => {
         .then(fenal => {
           setObj({data: fenal, pending:false, error:null});
         }).catch (err => {
-          console.log('there is an error', err);
+          setObj({...obj, pending:false, error:err.message});
+          console.log('there is an error', err, err.message);
         });
-      }, 4000);
+      }, 500);
 
       // return () => 'time';
     }, ['url']);
