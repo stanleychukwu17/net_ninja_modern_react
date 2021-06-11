@@ -18,12 +18,15 @@ function App() {
       <div className="App_cover">
         <Navbar />
         <div className="all_contents">
-
+          <Switch>
+            <Route path="/">
+              {error && <div className="errMan">{error}</div>}
+              {pending && <div className="Loading">Loading blog...</div>}
+              {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
+              {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
+            </Route>
+          </Switch>
         </div>
-        {error && <div className="errMan">{error}</div>}
-        {pending && <div className="Loading">Loading blog...</div>}
-        {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
-        {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
       </div>
     </Router>
   );
