@@ -12,7 +12,6 @@ const Getman = (url) => {
           setObj({data: fenal, pending:false, error:null});
         }).catch (err => {
           setObj({...obj, pending:false, error:err.message});
-          console.log('there is an error', err, err.message);
         });
       }, 500);
 
