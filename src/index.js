@@ -14,7 +14,7 @@ function App() {
     // setBlogs(boju);
   }
 
-  let {data:blogs, pending, error} = Getman('http://localhost:8010/blogs');
+  let {data:blogs, pending, error} = Getman('http://localhost:8000/blogs');
 
   return (
     <div className="App_cover">
