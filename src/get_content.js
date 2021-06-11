@@ -12,6 +12,7 @@ const Getman = (url) => {
         .then(fenal => {
           setData(fenal);
           setPending(false);
+          setError(null);
         }).catch (err => {
 
         });

@@ -16,8 +16,18 @@ function App() {
     setBlogs(boju);
   }
 
-  let dean = Getman('http://localhost:8000/blogs');
-  console.log(dean);
+  let {data, pending, error} = Getman('http://localhost:8000/blogs');
+  setBlogs(data);
+
+  if (blogs) {
+    console.log('we made it');
+  } else {
+    console.log('e no dey');
+  }
+
+  /* useEffect(() => {
+    console.log('we go dey hail your name!');
+  }); */
 
   return (
     <div className="App_cover">
