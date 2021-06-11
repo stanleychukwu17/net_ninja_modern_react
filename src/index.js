@@ -8,9 +8,9 @@ import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
 function App() {
-  let [blogs, setBlogs] = useState(null);
+  let [blogs, setBlogs] = useState(false);
   let [error, setError] = useState(null);
-  let [pending, setPending] = useState(null);
+  let [pending, setPending] = useState(true);
 
   let deleteBlog = blog_id => {
     let boju = [];
@@ -18,14 +18,16 @@ function App() {
     setBlogs(boju);
   }
 
-  let bum = Getman('http://localhost:8000/blogs');
-  // {data, pending, error} setBlogs(data);
-  console.log(bum);
+  if (typeof blogs !== 'object') {
+    let {data, pnd, err} = Getman('http://localhost:8000/blogs');
+    setBlogs(data);
+}
 
   return (
     <div className="App_cover">
       <Navbar />
       <Home />
+      {pending && <div className="errMan">Loading blog...</div>}
       {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
       {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
     </div>
