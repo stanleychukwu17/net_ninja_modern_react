@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="App_cover">
       <Navbar />
-      <Home />
       {error && <div className="errMan">{error}</div>}
       {pending && <div className="Loading">Loading blog...</div>}
       {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
