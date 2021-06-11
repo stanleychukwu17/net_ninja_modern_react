@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react';
 const Getman = (url) => {
     let [obj, setObj] = useState({data:null, pending:true, error:null});
 
-    // return {data, pending, error};
     useEffect(() => {
       setTimeout(() => {
         fetch(url)
@@ -15,7 +14,6 @@ const Getman = (url) => {
         });
       }, 500);
 
-      // return () => 'time';
     }, ['url']);
 
     return obj;
