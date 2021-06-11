@@ -16,6 +16,9 @@ function App() {
     <Router>
       <div className="App_cover">
         <Navbar />
+        <div class="all_contents">
+
+        </div>
         {error && <div className="errMan">{error}</div>}
         {pending && <div className="Loading">Loading blog...</div>}
         {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
