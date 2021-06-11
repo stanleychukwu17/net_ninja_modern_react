@@ -7,9 +7,14 @@ const Getman = (url) => {
 
     // return {data, pending, error};
     useEffect(() => {
-      fetch(url).then(jfile => jfile.json()).then(fenal => {
-        console.log(fenal);
-      });
+      setTimeout(() => {
+        fetch(url).then(jfile => jfile.json())
+        .then(fenal => {
+          console.log(fenal);
+        }).catch (err => {
+
+        });
+      }, 1000);
 
       return () => 'time';
     }, []);
