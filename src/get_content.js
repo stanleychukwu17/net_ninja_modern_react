@@ -10,7 +10,8 @@ const Getman = (url) => {
       setTimeout(() => {
         fetch(url).then(jfile => jfile.json())
         .then(fenal => {
-
+          setData(fenal);
+          setPending(false);
         }).catch (err => {
 
         });
