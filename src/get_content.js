@@ -7,20 +7,17 @@ const Getman = (url) => {
 
     // return {data, pending, error};
     useEffect(() => {
-      setTimeout(() => {
-        fetch(url).then(jfile => jfile.json())
-        .then(fenal => {
-          setData(fenal);
-          setPending(false);
-          setError(null);
-        }).catch (err => {
+      fetch(url).then(jfile => jfile.json())
+      .then(fenal => {
+        setData(fenal);
+        setPending(false);
+        setError(null);
+      }).catch (err => {
 
-        });
-      }, 1000);
+      });
 
       return () => 'time';
     }, []);
-
 
     return {data, pending, error}
 }
