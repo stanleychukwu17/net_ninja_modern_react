@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 
 const Getman = (url) => {
-    let [obj, setObj] = {data:null, pending:true, error:null};
+    let [obj, setObj] = useState({data:null, pending:true, error:null});
     /* let [data, setData] = useState(null);
     let [pending, setPending] = useState(true);
     let [error, setError] = useState(false); */
