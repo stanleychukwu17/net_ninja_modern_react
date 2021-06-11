@@ -22,11 +22,17 @@ function App() {
         <Navbar />
         <div className="all_contents">
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               {error && <div className="errMan">{error}</div>}
               {pending && <div className="Loading">Loading blog...</div>}
               {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
               {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
+            </Route>
+            <Route path="/about_us">
+ 
+            </Route>
+            <Route path="/about_us">
+ 
             </Route>
           </Switch>
         </div>
