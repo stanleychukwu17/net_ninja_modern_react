@@ -7,7 +7,10 @@ const Getman = (url) => {
 
     // return {data, pending, error};
     useEffect(() => {
-      fetch(url).then(() =>).then();
+      fetch(url).then(jfile => jfile.json()).then(fenal => {
+        console.log(fenal);
+      });
+
       return () => 'time';
     }, []);
 
