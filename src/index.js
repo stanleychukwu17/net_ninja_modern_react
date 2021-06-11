@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from 'react';
+import {React} from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
@@ -8,11 +8,7 @@ import Getman from './get_content.js';
 
 function App() {
 
-  let deleteBlog = blog_id => {
-    let boju = [];
-    boju = blogs.filter(v => v.id !== blog_id);
-    // setBlogs(boju);
-  }
+  let deleteBlog = blog_id => {}
 
   let {data:blogs, pending, error} = Getman('http://localhost:8000/blogs');
 
