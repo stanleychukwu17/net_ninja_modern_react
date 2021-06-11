@@ -11,9 +11,7 @@ const Getman = (url) => {
       fetch(url)
       .then(jfile => jfile.json())
       .then(fenal => {
-        // setData(fenal);
-        /* setPending(false);
-        setError(null); */
+        setObj({data: fenal, pending:false, error:null});
       }).catch (err => {
 
       });
@@ -21,6 +19,7 @@ const Getman = (url) => {
       // return () => 'time';
     }, ['url']);
 
+    console.log('my obj', obj);
     return obj;
 }
  
