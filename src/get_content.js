@@ -14,7 +14,7 @@ const Getman = (url) => {
         });
       }, 500);
 
-    }, [url]);
+    }, []);
 
     return obj;
 }
