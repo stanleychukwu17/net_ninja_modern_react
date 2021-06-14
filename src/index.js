@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './index.css';
 import Navbar from './navbar.js';
-import Bloglist from './bloglist.js';
-import Getman from './get_content.js';
 
 import AboutPage from './About_us';
 import BlogDetails from './blog_details';
