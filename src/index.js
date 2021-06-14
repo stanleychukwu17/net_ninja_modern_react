@@ -7,7 +7,7 @@ import Navbar from './navbar.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
-import Create_new_blog from './Create.js';
+import CreateNewBlog from './Create.js';
 import AboutPage from './About_us';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
               <AboutPage />
             </Route>
             <Route exact path="/new_blog">
-              <Create_new_blog />
+              <CreateNewBlog />
             </Route>
           </Switch>
         </div>
