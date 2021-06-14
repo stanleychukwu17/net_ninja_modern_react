@@ -4,7 +4,7 @@ const Bloglist = (props) => {
     const blogs = props.blogs;
 
     const ret_link = (link_id) => {
-        return '/blogDetails/'+link_id;
+        return '/blogs/'+link_id;
     }
 
     return (

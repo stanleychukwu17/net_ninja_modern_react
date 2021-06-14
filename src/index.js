@@ -9,6 +9,7 @@ import Getman from './get_content.js';
 
 import CreateNewBlog from './Create.js';
 import AboutPage from './About_us';
+import BlogDetails from './blog_details';
 
 function App() {
 
@@ -31,9 +32,8 @@ function App() {
             <Route path="/about_us">
               <AboutPage />
             </Route>
-            <Route exact path="/new_blog">
-              <CreateNewBlog />
-            </Route>
+            <Route exact path="/new_blog"><CreateNewBlog /></Route>
+            <Route exact path="/blogs/:id"><BlogDetails /></Route>
           </Switch>
         </div>
       </div>
