@@ -6,6 +6,7 @@ const BlogDetails = (props) => {
     let {id: blog_id} = useParams();
 
     let dts = Getman('http://localhost:8000/blogs/'+blog_id);
+    console.log(dts);
 
 
     if (dts.pending) {
@@ -13,7 +14,9 @@ const BlogDetails = (props) => {
     } else {
         return (
             <div>
-                <div>Blog details ready</div>
+                <div className="Bgh_title"><h2>Blog details ready</h2></div>
+                <div className="Bgh_author">By: na mano</div>
+                <div className="bgh_body"></div>
             </div>
         );
     }
