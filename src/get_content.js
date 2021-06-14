@@ -14,6 +14,7 @@ const Getman = (url) => {
       });
     }, 500);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return obj;
