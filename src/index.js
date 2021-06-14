@@ -7,15 +7,12 @@ import Navbar from './navbar.js';
 import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
-import CreateNewBlog from './Create.js';
 import AboutPage from './About_us';
 import BlogDetails from './blog_details';
+import Home from './Home.js';
+import CreateNewBlog from './Create.js';
 
 function App() {
-
-  let deleteBlog = blog_id => {}
-
-  let {data:blogs, pending, error} = Getman('http://localhost:8000/blogs');
 
   return (
     <Router>
@@ -24,10 +21,7 @@ function App() {
         <div className="all_contents">
           <Switch>
             <Route exact path="/">
-              {error && <div className="errMan">{error}</div>}
-              {pending && <div className="Loading">Loading blog...</div>}
-              {blogs && <Bloglist delF={deleteBlog} blogs={blogs} title="All the blog"/>}
-              {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
+              <Home />
             </Route>
             <Route path="/about_us">
               <AboutPage />
