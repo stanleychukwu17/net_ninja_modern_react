@@ -1,7 +1,7 @@
-const About_us_page = () => {
+const AboutPage = () => {
     return (
         <div><h1>About my blog dog</h1></div>
     );
 }
  
-export default About_us_page;
+export default AboutPage;

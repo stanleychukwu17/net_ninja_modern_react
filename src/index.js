@@ -8,7 +8,7 @@ import Bloglist from './bloglist.js';
 import Getman from './get_content.js';
 
 import Create_new_blog from './Create.js';
-import About_us_page from './About_us';
+import AboutPage from './About_us';
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
               {blogs && <Bloglist delF={deleteBlog} blogs={blogs.filter(ech => ech.author === 'mario')} title="Marios blog"/>}
             </Route>
             <Route path="/about_us">
-              <About_us_page />
+              <AboutPage />
             </Route>
             <Route exact path="/new_blog">
               <Create_new_blog />
