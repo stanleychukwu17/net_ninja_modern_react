@@ -9,6 +9,7 @@ import AboutPage from './About_us';
 import BlogDetails from './blog_details';
 import Home from './Home.js';
 import CreateNewBlog from './Create.js';
+import ojemba from "./funcs.js";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             </Route>
             <Route exact path="/new_blog"><CreateNewBlog /></Route>
             <Route exact path="/blogs/:id"><BlogDetails /></Route>
+            <Route path="*">{ojemba.NoPage}</Route>
           </Switch>
         </div>
       </div>
