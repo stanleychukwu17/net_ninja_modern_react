@@ -63,4 +63,11 @@ a:hover { text-decoration:underline; }
   padding: 9px 10px; background: #f1f2f6; border: 0; font-size: 15px; border-radius: 2px;
 }
 .frm_cnt input:focus { outline: 0; }
+.frm_btn { padding: 10px 0; }
+.frm_btn button {
+  padding: 10px 15px; border-radius: 3px; background: #0056b6; color: #fff; border: 0;
+  font-size: 14px; font-weight: bold; cursor: pointer; box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.frm_btn button:hover { box-shadow:none; }
+.frm_btn button:active { position: relative; top: 1px;}
   /*--end-- */
