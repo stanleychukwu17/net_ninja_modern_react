@@ -1,5 +1,8 @@
 import Getman from "./get_content";
 import Bloglist from "./bloglist";
+import ojemba from "./functions.json";
+
+console.log(ojemba);
 
 const Home = () => {
     let {data:blogs, pending, error} = Getman('http://localhost:8000/blogs');
