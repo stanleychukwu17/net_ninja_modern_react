@@ -3,5 +3,7 @@ const DeleteBlog = () => {
         <div>The blogs have been deleted</div>
     );
 }
+
+let ojemba = {DeleteBlog};
  
-export {DeleteBlog};
+export default ojemba;
