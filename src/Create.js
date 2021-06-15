@@ -7,7 +7,6 @@ const CreateNewBlog = () => {
     let [body, setBody] = useState('for me man!');
     let history = useHistory();
 
-
     let save_form = () => {
         let john = document.querySelectorAll('input,select,textarea,button');
         john.forEach((el)=> { el.classList.add('poper'); el.setAttribute("disabled", true); });
