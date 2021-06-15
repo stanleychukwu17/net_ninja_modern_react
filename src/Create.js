@@ -7,11 +7,17 @@ const CreateNewBlog = () => {
 
 
     let save_form = () => {
-        let john = document.querySelectorAll('input,select,textarea');
-        john.forEach((el)=> {
-            el.classList.add('poper');
-            el.setAttribute("disabled", true);
-        });
+        let john = document.querySelectorAll('input,select,textarea,button');
+        john.forEach((el)=> { el.classList.add('poper'); el.setAttribute("disabled", true); });
+
+        const kima = {title, author, body};
+        fetch('http://localhost:8000/blogs', {
+            method: 'POST',
+            headers: {"Content-Type": "application/json"},
+            'body': JSON.stringify(kima)
+        }).then(ret => {
+            john.forEach((el)=> { el.classList.remove('poper'); el.removeAttribute("disabled"); });
+        })
     }
 
     return (
