@@ -7,10 +7,10 @@ const CreateNewBlog = () => {
 
 
     let save_form = () => {
-        console.log('we dey save the man')
         let john = document.querySelectorAll('input,select,textarea');
         john.forEach((el)=> {
             el.classList.add('poper');
+            el.setAttribute("disabled", true);
         });
         console.log(john.length)
     }
