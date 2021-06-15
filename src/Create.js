@@ -1,9 +1,11 @@
 import {useState} from 'react';
+import { useHistory } from 'react-router';
 
 const CreateNewBlog = () => {
     let [title, setTitle] = useState('john is good');
     let [author, setAuthor] = useState('stanley');
     let [body, setBody] = useState('for me man!');
+    let history = useHistory();
 
 
     let save_form = () => {
@@ -17,6 +19,7 @@ const CreateNewBlog = () => {
             'body': JSON.stringify(kima)
         }).then(ret => {
             john.forEach((el)=> { el.classList.remove('poper'); el.removeAttribute("disabled"); });
+            history.push('/')
         })
     }
 
