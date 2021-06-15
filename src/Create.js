@@ -7,7 +7,13 @@ const CreateNewBlog = () => {
                 <div className=""><p>Body of blog</p> <p><textarea></textarea></p></div>
                 <div className="">
                     <p>Author of blog</p>
-                    <p><textarea></textarea></p>
+                    <p>
+                        <select id="">
+                            <option value="mario">mario</option>
+                            <option value="ben">ben</option>
+                            <option value="stanley">stanley</option>
+                        </select>
+                    </p>
                 </div>
                 <div><button className="btn_blue">Save blog</button></div>
             </div>
