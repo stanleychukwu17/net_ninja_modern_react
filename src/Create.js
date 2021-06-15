@@ -12,7 +12,6 @@ const CreateNewBlog = () => {
             el.classList.add('poper');
             el.setAttribute("disabled", true);
         });
-        console.log(john.length)
     }
 
     return (
