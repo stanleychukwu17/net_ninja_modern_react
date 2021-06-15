@@ -5,6 +5,11 @@ const CreateNewBlog = () => {
     let [author, setAuthor] = useState('stanley');
     let [body, setBody] = useState('for me man!');
 
+
+    let save_form = () => {
+        console.log('we dey save the man')
+    }
+
     return (
         <div className="frm_Cvr">
             <div className="frm_hdr"><h2>For creating blog</h2></div>
@@ -21,7 +26,7 @@ const CreateNewBlog = () => {
                     </p>
                 </div>
                 <div className="frm_cnt"><p>Body of blog</p> <p><textarea value={body} onChange={(e)=>{setBody(e.target.value)}}></textarea></p></div>
-                <div className="frm_btn"><button className="btn_blue">Save blog</button></div>
+                <div className="frm_btn"><button className="btn_blue" onClick={save_form}>Save blog</button></div>
             </div>
         </div>
     );
