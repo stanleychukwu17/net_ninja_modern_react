@@ -1,4 +1,8 @@
+import {useState} from './react';
+
 const CreateNewBlog = () => {
+    let [title, setTitle] = useState('john is good');
+
     return (
         <div className="frm_Cvr">
             <div className="frm_hdr"><h2>For creating blog</h2></div>
