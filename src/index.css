@@ -71,4 +71,5 @@ a:hover { text-decoration:underline; }
 }
 .frm_btn button:hover { box-shadow:none; }
 .frm_btn button:active { position: relative; top: 1px;}
+.poper { opacity: 0.5; cursor: default; }
   /*--end-- */
