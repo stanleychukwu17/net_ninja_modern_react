@@ -11,7 +11,6 @@ import Home from './Home.js';
 import CreateNewBlog from './Create.js';
 
 function App() {
-
   return (
     <Router>
       <div className="App_cover">

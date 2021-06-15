@@ -7,7 +7,6 @@ const BlogDetails = (props) => {
 
     let {data, pending, error} = Getman('http://localhost:8000/blogs/'+blog_id);
 
-
     if (pending) {
         return ('page loading');
     } else {
