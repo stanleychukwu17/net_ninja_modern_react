@@ -9,6 +9,8 @@ const BlogDetails = (props) => {
 
     if (pending) {
         return ('page loading');
+    } else if (error) {
+        return <div>{error}</div>;
     } else {
         return (
             <div className="container">
