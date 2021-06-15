@@ -1,15 +1,6 @@
-import {useHistory} from 'react-router'
-
 const DelF = (blog_id) => {
-    let history = useHistory();
-
-    console.log(blog_id);
-
-    fetch('http://localhost:8000/blogs', {
-        method: 'DELETE',
-    }).then(ret => {
-        history.push('/')
-    })
+    fetch('http://localhost:8000/blogs/'+blog_id, { method: 'DELETE'});
+    console.log('deleted')
 }
 
 let ojemba = {DelF};
